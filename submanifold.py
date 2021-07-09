@@ -10,19 +10,19 @@ input_3d = np.zeros((x, y, z))
 padded_input_3d=np.zeros((x+2,y+2,z))
 i=0
 j=0
-for k in range(3):
+for k in range(z):
   input_3d[i][j][k]=1
   padded_input_3d[i+1][j+1][k]=1
 
 i=0
 j=2
-for k in range(3):
+for k in range(z):
   input_3d[i][j][k]=1
   padded_input_3d[i+1][j+1][k]=1
 
 i=2
 j=1
-for k in range(3):
+for k in range(z):
   input_3d[i][j][k]=1
   padded_input_3d[i+1][j+1][k]=1
 

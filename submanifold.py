@@ -26,7 +26,7 @@ for k in range(z):
   input_3d[i][j][k]=1
   padded_input_3d[i+1][j+1][k]=1
 
-filter_3d = np.ones((3,3,3)) # 1 filer 
+filter_3d = np.ones((3,3,z)) # 1 filer 
 
 output_2d=signal.convolve(padded_input_3d,filter_3d, mode='valid')
 
